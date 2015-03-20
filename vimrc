@@ -2,6 +2,10 @@
 " Kevin's vimrc file
 "
 
+" Install pathogen.
+"  See https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
+
 " Use Vim settings, rather than Vi settings (much better!)
 set nocompatible
 
@@ -82,8 +86,4 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
       \ | wincmd p | diffthis
 endif
-
-" Install pathogen.
-"  See https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
 
