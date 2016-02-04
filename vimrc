@@ -17,7 +17,7 @@ set incsearch         " do incremental searching
 set colorcolumn=81    " show red line past 80 chars
 set tabstop=2         " Indent 2 spaces by default
 set shiftwidth=2      " Indent 2 spaces by default
-set expandtab         " Always expand tabs to spaces
+set noexpandtab       " Never expand tabs to spaces
 
 " Use a mouse if it's available
 if has('mouse')
