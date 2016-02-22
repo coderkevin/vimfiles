@@ -60,14 +60,10 @@ if has("autocmd")
 
   " Show trailing whitespace and unwanted tabs:
   autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-  autocmd ColorScheme * highlight UnwantedTab ctermbg=red guibg=red
 
   " Extra whitespace is any trailing whitespace except when typing it.
   autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
   autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-
-  " Tabs anywhere are unwanted.
-  autocmd VimEnter * match UnwantedTab /\t/
 
   " Set colorscheme at end, so it doesn't clobber highlighting above.
   colorscheme jellybeans
